@@ -526,8 +526,8 @@ function tdcli_update_callback(data)
 					local links = redis:scard("botBOT-IDsavedlinks")
 					local offjoin = redis:get("botBOT-IDoffjoin") and "⛔️" or "✅️"
 					local offlink = redis:get("botBOT-IDofflink") and "⛔️" or "✅️"
-					local gp = redis:get("botBOT-IDmaxgroups") or "تعیین نشده"
-					local mmbrs = redis:get("botBOT-IDmaxgpmmbr") or "تعیین نشده"
+					local gp = redis:get("botBOT-IDmaxgroups") or "80"
+					local mmbrs = redis:get("botBOT-IDmaxgpmmbr") or "200"
 					local nlink = redis:get("botBOT-IDlink") and "✅️" or "⛔️"
 					local contacts = redis:get("botBOT-IDsavecontacts") and "✅️" or "⛔️"
 					local fwd =  redis:get("botBOT-IDfwdtime") and "✅️" or "⛔️" 
