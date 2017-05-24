@@ -294,7 +294,7 @@ function tdcli_update_callback(data)
 						redis:set("botBOT-IDsavecontacts", true)
 						return send(msg.chat_id_, msg.id_, "فرایند افزودن خودکار مخاطبین به اشتراک  گذاشته شده فعال شد.")
 					end
-				elseif text:match("^(حداکثر گروه) (%d+)$") then
+				elseif text:match("^(گروه) (%d+)$") then
 					local matches = text:match("%d+")
 					redis:set('botBOT-IDmaxgroups', tonumber(matches))
 					return send(msg.chat_id_, msg.id_, "<i>تعداد حداکثر سوپرگروه های تبلیغ‌گر تنظیم شد به : </i><b> "..matches.." </b>")
