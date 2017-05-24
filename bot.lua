@@ -519,7 +519,7 @@ function tdcli_update_callback(data)
 					local ss = redis:get("botBOT-IDofflink") and 0 or redis:get("botBOT-IDmaxlink") and redis:ttl("botBOT-IDmaxlink") or 0
 					local msgadd = redis:get("botBOT-IDaddmsg") and "✅️" or "⛔️"
 					local numadd = redis:get("botBOT-IDaddcontact") and "✅️" or "⛔️"
-					local txtadd = redis:get("botBOT-IDaddmsgtext") or  "اد‌دی گلم خصوصی پیام بده"
+					local txtadd = redis:get("botBOT-IDaddmsgtext") or  "ad.shdi.pv"
 					local autoanswer = redis:get("botBOT-IDautoanswer") and "✅️" or "⛔️"
 					local wlinks = redis:scard("botBOT-IDwaitelinks")
 					local glinks = redis:scard("botBOT-IDgoodlinks")
